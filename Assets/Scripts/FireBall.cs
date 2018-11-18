@@ -5,7 +5,7 @@ using UnityEngine;
 public class FireBall : MonoBehaviour
 {
 
-    public int DamageToGive;
+   
     public float BallSpeed;
 
     private Rigidbody2D theRB;
@@ -32,10 +32,8 @@ public class FireBall : MonoBehaviour
 
 
 
-    void OnTriggerEnter2D(Collider2D other)
+   void OnTriggerEnter2D(Collider2D other)
     {
-
-        
 
 
         Instantiate(FireBallEffect, transform.position, transform.rotation);
