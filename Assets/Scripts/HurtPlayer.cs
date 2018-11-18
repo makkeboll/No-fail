@@ -19,7 +19,7 @@ public class HurtPlayer : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.tag== "Mobs")
+        if (other.gameObject.tag == "Mobs")                       
         {
             other.gameObject.GetComponent<PlayerHealthManager>().HurtPlayer(DamageToGive);
         }
